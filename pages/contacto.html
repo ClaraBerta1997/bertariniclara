@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/Imag/favicon-16x16.png">
     <title>FloreriaBertarini</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
-<body>
+<body id="grad">
 <div class="container">
 <!-- Header -->
     <header id="header">
@@ -32,18 +33,18 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly w-100">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/tienda.html">Tienda</a>
+                            <a class="nav-link active" aria-current="page" href="../pages/tienda.html">TIENDA</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../contacto.html">Contacto</a>
+                            <a class="nav-link" href="../contacto.html">CONTACTO</a>
                         </li>
                     </ul>
                     <form class="d-flex">
                         <input class="form-control me-2 buscador" type="search" placeholder="Buscador" aria-label="Search">
-                        <button class="btn btnBuscar btn-outline-success" type="submit">Buscar</button>
+                        <button class="btn btnBuscar btn-outline-success" type="submit">BUSCAR</button>
                     </form>
                 </div>
             </div>
@@ -51,81 +52,83 @@
 <!-- /Navbar  -->
 
 <!-- /Contacto  -->
-<section>
+
 
 <section class="mb-4">
 
-    <!--Section heading-->
-    <h1 class="h1-responsive font-weight-bold text-center my-4">Contactanos</h1>
-    <!--Section description-->
+    <div id="contacto1">
+        <h1 class="h1-responsive font-weight-bold text-center my-4">Contáctenos</h1>
+    </div>
   
-
-    <div class="row">
+  <div class="row">
 
         <!--Grid column-->
-        <div class="col-md-9 mx-auto mb-md- mb-6">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Nombre</label>
+        <div id="contacto">
+            <div class="col-md-8 mx-auto mb-md-md mb-6">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Nombre</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                    </div>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Sujeto</label>
+                            </div>
                         </div>
                     </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Email</label>
+                    <!--Grid row-->
+    
+                    <!--Grid row-->
+                    <div class="row">
+    
+                        <!--Grid column-->
+                        <div class="col-md-12">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Dejános un mensaje</label>
+                            </div>
+    
                         </div>
                     </div>
-                    <!--Grid column-->
-
+                    <!--Grid row-->
+    
+                </form>
+    
+                <div class="text-center text-md-left">
+                    <a class="btn btn btn-secondary" onclick="document.getElementById('contact-form').submit();">Envíar</a>
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Sujeto</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Dejános un mensaje</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                <div class="status"></div>
             </div>
-            <div class="status"></div>
         </div>
+        
         <!--Grid column-->
 
-    </section>
+</section>
 
     
 <!-- Footer -->
@@ -172,7 +175,7 @@
             <section class="futer3 foot">
                 <div>
                     <h2>Contactanos</h2>
-                    <!-- Lista contacto -->
+                    <!-- Lista contactos -->
                     <div class="contenidoF">
                         <div class="line"><img src="../assets/Imag/telephone.svg" alt=""><h3>Telefono</h3></div>
                         <div class="line"><img src="../assets/Imag/envelope.svg" alt=""><h3>Mail</h3></div>
@@ -194,9 +197,9 @@
             </div>
             <div class="modal-body">      
                 <p>       	
-                    <span>ENVIOS</span><br>
+                    <span>Envíos</span><br>
                     ÚNICAMENTE HACEMOS ENTREGAS EN CAPITAL FEDERAL Y CABA.<br>
-                    <span>HORARIOS DE ENTREGA</span><br>
+                    <span>Horarios de entrega</span><br>
                     DE LUNES A VIERNES DE 9 A 17 HS Y LOS DÍAS SÁBADOS DE 9 A 13 HS.
                 </p>
             </div>
@@ -211,14 +214,14 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="CambiosYDevoluciones">Cambios y devoluciones</h5>
+                <h5 class="modal-title" id="CambiosYDevoluciones">Cambios</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">      
                 <p>       	
-                    <span>TU EXPERIENCIA ES LO QUE VALE</span><br>
-                    SI NECESITÁS AYUDA, COMUNICATE CON NUESTRO EQUIPO DE ATENCIÓN AL CLIENTE.<br>
-                    LOS HORARIOS DE ATENCIÓN SON DE LUNES A VIERNES DE 9 A 20 HS Y LOS DÍAS SÁBADOS DE 9 A 14 HS.
+                    <span>Tu experiencia es lo que vale</span><br>
+                    Si necesitas ayuda, comunicate con nuestro equipo de atención al cliente.<br>
+                    Los horarios de atención son de lunes a viernes de 9 A 20 Hs
                 </p>
             </div>
             <div class="modal-footer">
