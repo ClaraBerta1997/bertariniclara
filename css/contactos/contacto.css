@@ -1,0 +1,25 @@
+#contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(169, 1, 1);
+  margin-top: 40px;
+  height: 300px;
+}
+
+#contacto1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(169, 1, 1);
+  margin-top: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=contacto.css.map */

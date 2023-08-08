@@ -1,0 +1,49 @@
+.rowplantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(169, 1, 1);
+  position: relative;
+  margin: 30px;
+  height: 400px;
+}
+.rowplantas .pPic {
+  position: relative;
+  margin-top: 50px;
+  padding-inline: 10px;
+}
+
+.txtfotos {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: center;
+  margin-top: 25px;
+  padding-inline: 25px;
+}
+
+#tituloplantas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: space-around;
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(40, 0, 93);
+  position: relative;
+  margin-top: 50px;
+}
+
+.movimiento {
+  transition: 0.5s;
+  object-fit: cover;
+}
+
+.movimiento:hover {
+  transform: scale(1.1);
+}
+
+/*# sourceMappingURL=plantas.css.map */

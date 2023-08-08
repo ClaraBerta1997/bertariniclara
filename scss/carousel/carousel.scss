@@ -1,0 +1,25 @@
+
+.carousel {
+    z-index: 1000;
+  }
+  
+  #carouselExampleIndicators .carousel-indicators {
+    bottom: -42px;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+  
+  .modal-body span {
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 10% 0;
+    color: $bg-color;
+  }
+  
+  section {
+    color: $bg-color;
+  }
