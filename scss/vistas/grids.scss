@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Arial, Helvetica, sans-serif;
+  src: url(../assets/Fuentes/Quicksand-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 67.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif, Arial, Helvetica, sans-serif;
+  background-color: $bg-color2;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+
+/* PLANTAS */
+.plantas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+    margin: 30px;
+    height: 280px;
+  
+    .pPic {
+      position: relative;
+      margin-top: 40px;
+      padding-inline: 25px;
+    }
+  }
+  .txtfotos {
+    position: relative;
+    margin-top: 40px;
+    padding-inline: 25px;
+  }

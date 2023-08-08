@@ -1,0 +1,128 @@
+// NAVBAR TIENDA HTML
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  max-width: 100%;
+  background-color: $bg-color2;
+  font-size: 1.4rem;
+  margin-bottom: 2%;
+
+.headerIzquierda {
+    max-width: 360px;
+
+    .logo {
+      position: relative;
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    font-size: 3rem;
+  }
+}
+
+.d-flex {
+  padding-top: 0;
+  color: $bg-color;
+  font-family: Arial, Helvetica, sans-serif;
+
+  &:hover {
+    color: $hover;
+  }
+}
+
+#navegacion {
+  font-size: 2rem;
+  padding: 10px 0 10px 0;
+  background-color: $bg-color2;
+  color: $bg-color2;
+  text-decoration: none;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  font-family: Qsand;
+  border-radius: 15px 15px 0 0;
+
+  .navbar-collapse {
+    background-color: $bg-color2;
+    color:$bg-color;
+    margin-top: 5px;
+    ul {
+      justify-content: center;
+    }
+  }
+
+  .nav-link {
+    padding-top: 0;
+    color: $bg-color;
+    font-family: Qsand;
+
+    &:hover {
+      color: $hover;
+    }
+  }
+
+  .btnBuscar {
+    background-color: $bg-color;
+    color: #9DC9E0;
+    font-weight: bold;
+    border: $bg-color;
+
+    &:hover {
+      background-color: $hover;
+      color: $hover2;
+      transition-duration: 0.5s;
+    }
+  }
+  
+  .navbar-toggler-icon {
+    margin: 3px;
+  }
+}
+
+/* mediaQuery navbar */
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+
+  #navegacion {
+    background-color:$bg-color;
+    color: #9DC9E0;
+
+    .nav-link {
+      color: #9DC9E0;
+
+      &:hover {
+        color: $hover2;
+      }
+    }
+
+    .navbar-collapse {
+      background-color: $bg-color;
+    }
+
+    .dropdown-menu {
+      background-color: $bg-color;
+
+      a {
+        color: #9DC9E0;
+
+        &:hover {
+          color: $hover2;
+        }
+      }
+
+      li:hover a {
+        padding: 5px;
+      }
+    }
+  }
+}

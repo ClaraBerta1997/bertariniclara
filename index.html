@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloreriaBertarini</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+<div class="container">
+<!-- Header -->
+    <header id="header">
+        <div class="headerIzquierda">
+            <div>
+                <a href="./index.html">
+                    <img class="logo" src="./assets/Imag/logo.png" alt="logo">
+                </a>
+            </div> 
+        </div> 
+    </header>
+<!-- /Header -->
+
+<!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light" id="navegacion">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-evenly w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 buscador" type="search" placeholder="Buscador" aria-label="Search">
+                        <button class="btn btnBuscar btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+<!-- /Navbar  -->
+
+<!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/Imag/car1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/Imag/car2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/Imag/car3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+<!-- /Carousel -->
+
+</div>
+
+<!-- Footer -->
+    <div class="container">
+        <footer>
+            <section class="futer1 foot">
+                <div>
+                    <h2>Navegación</h2>
+                    <!-- Botones modales -->
+                    <div class="contenidoF contenidoF1">
+                        <button type="button" class="btn btn-lg btnFuter1" data-bs-toggle="modal" data-bs-target=".envios">
+                            Envíos y entregas
+                        </button>
+                        <button type="button" class="btn btn-lg btnFuter1" data-bs-toggle="modal" data-bs-target=".cambios">
+                            Cambios
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="futer2 foot">
+                <div>
+                    <h2 class="mediosDePago">Medios de pago</h2>
+                    <div class="contenidoF">
+                        <!-- Lista Medios de pago -->
+                        <div>
+                            <ul class="mediosPago">
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mercadopago.png" class="footer__top__icon" alt="Mercado Pago"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa.png" class="footer__top__icon" alt="Visa"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/american-express.png" class="footer__top__icon" alt="American Express"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mastercard.png" class="footer__top__icon" alt="MasterCard"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/naranja.png" class="footer__top__icon" alt="Naranja"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/cabal.png" class="footer__top__icon" alt="Cabal"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/nativa.png" class="footer__top__icon" alt="Nativa"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/mercadopago-patagonia.png" class="footer__top__icon" alt="Tarjeta Mercado Pago Patagonia"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/tarjeta-walmart.png" class="footer__top__icon" alt="Tarjeta Walmart"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/diners-club.png" class="footer__top__icon" alt="Diners Club"></li>
+                                <li><img src="https://dk0k1i3js6c49.cloudfront.net/iconos-pago/visa-debito.png" class="footer__top__icon" alt="Visa Débito"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="futer3 foot">
+                <div>
+                    <h2>Contactanos</h2>
+                    <!-- Lista contacto -->
+                    <div class="contenidoF">
+                        <div class="line"><img src="./assets/Imag/telephone.svg" alt=""><h3>Telefono</h3></div>
+                        <div class="line"><img src="./assets/Imag/envelope.svg" alt=""><h3>Mail</h3></div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+<!-- /Footer -->
+
+<!-- modal 1 -->
+<div class="modal fade envios" id="exampleModal" tabindex="-1" aria-labelledby="EnviosYEntregas" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="EnviosYEntregas">Envíos y entregas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">      
+                <p>       	
+                    <span>ENVIOS</span><br>
+                    ÚNICAMENTE HACEMOS ENTREGAS EN CAPITAL FEDERAL Y CABA.<br>
+                    <span>HORARIOS DE ENTREGA</span><br>
+                    DE LUNES A VIERNES DE 9 A 17 HS Y LOS DÍAS SÁBADOS DE 9 A 13 HS.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal 2 -->
+<div class="modal fade cambios" id="exampleModal" tabindex="-1" aria-labelledby="CambiosYDevoluciones" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="CambiosYDevoluciones">Consultas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">      
+                <p>       	
+                    <span>QUEREMOS QUE TU EXPERIENCIA DE COMPRA SEA LA MEJOR</span><br>
+                    SI TUVISTE ALGÚN INCONVENIENTE CON TU PEDIDO Y NECESITÁS AYUDA, COMUNICATE CON NUESTRO EQUIPO DE ATENCIÓN AL CLIENTE.<br>
+                    LOS HORARIOS DE ATENCIÓN SON DE LUNES A VIERNES DE 9 A 20 HS Y LOS DÍAS SÁBADOS DE 9 A 14 HS.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="./Js/bootstrap.min.js"></script>
+</body>
+</html>
